@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            my page
+        </title>
+        <link rel="stylesheet" href="style (1).css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="matchtable.html">Timetable</a></li>
+                </ul>
+                <nav>
+                    <ul class="topnav">
+                       <li><a href="login.php">Log out</a></li>
+                    </ul>
+    </nav>
+            </nav>
+           <h1>
+               HOME PAGE
+           </h1>
+        </header>
+        <section>
+             <b><u>welcome to the Home page!</u></b>
+             <BR>
+             <br><b>Fill the given details to book your seat!</b>
+             <br>
+             <img src="images.png" align="right" width="300px" height="300px" >
+            <br>
+            <a href="matchtable.html"><button class="btn">Go To the match table page</button></a>
+            <br>
+            <a href="idpage.php"><button class="btn">Check user _id here</button></a>
+            <form action="process2.php" method="POST">
+			
+				<p>
+					<label>customer_id:</label>
+					<input type="number" id="cu_id" name="cu_id"  />
+				
+				</p>
+                <label for="match_no" >Choose match number:</label>
+                    <select name="match_no" id="match_no" class="custom-select" style="width: 50px;" required>
+                        <option label="0" hidden> </option>
+                        <option label="1">1</option>
+                        <option label="2">2</option>
+                        <option label="3">3</option>
+                        <option label="4">4</option>
+                        <option label="5">5</option>
+                    </select>                
+                       
+                       <br>
+                       <br>
+                       <label for="seat">
+                        Select your seat!
+                        <br>
+                        (ctrl-click to select multiple seats)
+                        <br>
+                        <br>
+                       </label>
+                       <select name="seat[]" id = "seat"
+                       multiple="multiple" class="custom-select" style="width: 160px;" required>
+                       <option value="0" hidden> </option>
+                        <option value = "1 ">1 regular price=1000</option>
+                        <option value = "2">2 regular price=1000</option>
+                        <option value = "3">3 regular price=1000</option>
+                        <option value = "4">4 regular price=1000</option>
+                        <option value = "5">5 regular price=1000</option>
+                        <option value = "6">6 club price=1500</option>
+                        <option value = "7">7 club price=1500</option>
+                        <option value = "8">8 club price=1500</option>
+                        <option value = "9">9 club price=1500</option>
+                        <option value = "10">10 club price=1500</option>
+                        <option value = "11">11 premium price=2000</option>
+                        <option value = "12">12 premium price=2000</option>
+                        <option value = "13">13 premium price=2000</option>
+                        <option value = "14">14 premium price=2000</option>
+                        <option value = "15">15 premium price=2000</option>
+                        </select>
+                       <button class="btn" type = "button"
+                         onclick = "showChoices()">
+                        Book
+                       </button>
+                <br>
+                <br>
+                <input class="btn" value= "Submit" type="submit"/>
+            </form>
+        </section>
+        <footer>
+            <center>DBMS PROJECT ON ONLINE CRICKET MATCH TICKET BOOKING SYSTEM</center>
+        </footer>
+    </body>
+</html>
